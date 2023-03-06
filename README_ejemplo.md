@@ -1,4 +1,6 @@
 # Título
+![Estatus](https://img.shields.io/badge/Estatus-desarrollo-yellow)
+
 Descripción general del repositorio. Algo breve que capte el interés de la persona usuaria y que no pase de más de 2 
 líneas de texto.
 
