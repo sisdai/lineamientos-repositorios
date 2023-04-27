@@ -39,28 +39,74 @@ de tu navegador.
 | planeas-web                              	| energia-planeas-front          	|
 
 
-### Estructura mínima
+### Contenido del repositorio
 
-De manera general todos los repositorios deben de cumplir con un tronco común. Toma en cuenta que de acuerdo al tipo de 
-repositorio la documentación será la que variará en estructura.
-
-#### ¿Qué si lleva mi repo?
+#### ¿Qué SÍ lleva mi repo?
 
 - Documentación como archivo _markdown_ y nombrado _README.md_. En la sección de _Documentación_ de este documento te 
 damos los lineamientos generales para que puedas redactarla. Así mismo ve a las plantillas de documentación que se 
 encuentran en este repositorio para un vistazo más particular de acuerdo al proyecto en el que te encuentres trabajando.
-- El apartado de _About_ debidamente llenado.
+- El apartado de _About_ en GitHub o _Project description_ en GitLab debidamente llenado. Estos dos apartados son una 
+descripción muy breve y general del repositorio, generalmente de una o dos oraciones.
 
-En GitHub esto se vé y se edita dándole al ícono del engrane a la derecha de _About_:
+En GitHub el apartado de _About_ se puede encontrar en el lado derecho de la interfaz, junto al botón de 
+_Code_.
 
-<img src="activos/github-about.png" width="30%"/>
-<img src="activos/github-about-editar.png" width="30%"/>
+<img src="activos/github-about.png" width="40%"/>
 
-En GitLab se ve así:
+Al dar clic en el ícono del engrane al lado de _About_ se abre una ventana emergente para editar el campo.
 
+<img src="activos/github-about-editar.png" width="40%"/>
+
+En GitLab el apartado de _Project description_ se visualiza en la parte superior del repositorio:
+
+<img src="activos/gitlab-project-description.png" width="40%"/>
+
+Para editarlo hay que dar click en la barra lateral izquierda, primero en _Settings_, luego en 
+_General_y se desplegarán del lado derecho los campos para editar los datos del repositorio.
+
+<img src="activos/gitlab-project-description-editar.png" width="40%"/>
+
+#### ¿Qué NO debe de llevar mi repo?
+
+- No debe de contener credenciales, ya sea de bases de datos, tokens de API, etc. Tanto en el código, como en archivos 
+independientes.
+- No debe de contener datos originales del proyecto. Recuerda que los datos se analizan, limpian y procesan antes de que 
+sean liberados al público usuario. Una excepción de datos originales son los datos auxiliares, como pueden ser archivos 
+con claves geoestatales, datos de población local o mundial, etc.
+- No se deben de versionar archivos de sistema, p.e. __MACOSX_, _ipynb_checkpoints_, _.idea_, etc.
+
+#### Consideraciones importantes
+
+- Archiva los repositorios deprecados. Si identificas que un repositorio se volvió obsoleto o ya no se le ha dado 
+continuidad, es una buena práctica archivarlos (no borrarlos). Si no tienes permiso para hacerlo puedes abrir un issue
+en el repo (ver sección de _Contribuciones_ en este proyecto) y asignar a una persona con permisos de _Maintainer_.
+- Añade los nuevos repositorios que hagas en el inventario interno de repositorios que se habilitará proximamente.
 
 
 ## Documentación 
+
+### Estructura mínima
+
+De manear general la documentación de los repositorios debe de tener un tronco común, pero esto dependerá del proyecto 
+en el que estes trabajando. En este proyecto se añaden plantillas de documentación para algunos proyectos, como son los 
+el front-end de los ENI. Puedes consultarlas en la carpeta _plantillas_.
+La documentación la debes de redactar en el archivo _README.md_. Puedes ir al documento _README_ejemplo.md_
+de este repositorio para ver un ejemplo de la estructura mínima y reglas más detalladas de las secciones que se 
+listan a continuación.
+
+- Título. Puede ser el nombre del repositorio o del proyecto.
+- Descripción general del repositorio.
+- Introducción, mencionando el objetivo, resultados, casi como un _abscract_. Evita usar las palabras _DAI_,
+  _Dadsig_. Sí puedes usar _Gema_, _Sisdai_, _ENI_.
+- Limitación de responsabilidad. Esta parte sólo la colocarás en caso de que el proyecto se libere al público aún en desarrollo o se socialice de
+  manera "no oficial"
+- Requerimientos o dependencias.
+- Instrucciones de instalación y/o uso.
+- Licencia (SALSA).
+- Contribución (SALSA).
+
+También de manera opcional y en medida de lo posible puedes incluir [badges](https://shields.io/).
 
 ### Tipos de repositorios
 
@@ -75,15 +121,23 @@ público usuario:
 - herramientas para personas analistas
 - socialización de los ENI
 
-### Estructura mínima
 
+## Versionamiento semántico (en construcción)
 
+## Flujo entre ramas (en construcción)
 
+## Contribuir a este repositorio
 
+Para contribuir a este proyecto de buenas prácticas, hazlo usando los lineamientos de SALSA, que puedes consultar
+[aquí](https://salsa.crip.conacyt.mx/guidelines/contribute/)*. De la misma manera, puedes consultar las siguientes 
+fuentes de información para conocer más acerca de como contribuir a los proyectos.
 
-## Versionamiento con tags
+- [Contribuir a proyectos](https://docs.github.com/es/get-started/quickstart/contributing-to-projects)
+- [Creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
 
-## Flujo entre ramas
+*En los lineamientos de contribución se lista la rama _master_ se lista como principal, sin embargo en este proyecto,
+dicha rama es _main_.
+
 
 
 
