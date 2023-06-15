@@ -35,7 +35,7 @@ Por lo anterior, el presente documento tiene como objetivo establecer una serie 
 
 En el marco de ciencia abierta es importante estructurar de una manera clara y precisa los repositorios para que la persona usuaria pueda consultar nuestros datos y/o procesos, es por eso que te compartimos lo siguiente para que consideres incluirlo en tu repositorio. 
 
-### Consideración 
+### Consideración ⚠️
 
 Esta breve guía de recomendaciones no pretender ser exhaustiva, sino que busca ser una guía de buenas prácticas generales para estructurar un repositorio de datos. Si requieres consultar una guía más detallada, te recomendamos consultar alguna guía como [The Turing Way](https://the-turing-way.netlify.app/welcome.html), que ahonda en buenas prácticas para la ciencia de datos.
 
@@ -212,7 +212,7 @@ ruta = "datos/datos_crudos/datos.csv"
 ```
 
 Espero que estas sugerencias te resulten útiles para organizar tu proyecto.
-Recuerda, la clave de un buen proyecto es mantenerlo organizado, documentado, y accesible. ¡Buena suerte! 
+Recuerda, la clave de un buen proyecto es mantenerlo organizado, documentado, y accesible. ¡Buena suerte! 🍀
 
 # Referencias
 
