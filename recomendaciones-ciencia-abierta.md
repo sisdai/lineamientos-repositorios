@@ -22,20 +22,27 @@ Por lo anterior, el presente documento tiene como objetivo establecer una serie 
 
 1. [Introducción](#introducción)
 2. [Recomendaciones básicas](#recomendaciones-básicas)
-3. [¿Qué archivos comparto?](#i-¿qué-archivos-comparto?)
-4. [¿Cómo organizo mis archivos?](#ii-¿cómo-organizo-mis-archivos?)
-5. [¿Qué necesita mi repositorio para funcionar?](#iii-¿qué-necesita-mi-repositorio-para-funcionar?)
+3. [Archivos que recomendamos compatir en tu repositorio](#i-archivos-que-recomendamos-compatir-en-tu-repositorio)
+4. [La organización de tus archivos](#ii-la-organización-de-tus-archivos)
+5. [Lo que necesita mi repositorio para ser funcional y reproducible](#iii-lo-que-necesita-mi-repositorio-para-ser-funcional-y-reproducible)
 6. [Licencias](#iv-licencias)
-7. [Referencias](#referencias)
+7. [Versionamiento](#v-versionamiento)
+8. [Guía de contribución](#vi-guía-de-contribución)
+9. [Recomendaciones adicionales](#vii-recomendaciones-adicionales)
+10. [Referencias](#referencias)
 
 # Recomendaciones básicas
 
-En el marco de ciencia abierta es importante estructurar de una manera clara y precisa los repositorios para que la persona usuaria pueda consultar nuestros datos y/o procesos, es por eso que te compartimos lo siguiente para que consideres incluirlo en tu repositorio:
+En el marco de ciencia abierta es importante estructurar de una manera clara y precisa los repositorios para que la persona usuaria pueda consultar nuestros datos y/o procesos, es por eso que te compartimos lo siguiente para que consideres incluirlo en tu repositorio. 
 
-## I. ¿Qué archivos comparto?
+### Consideración 
+
+Esta breve guía de recomendaciones no pretender ser exhaustiva, sino que busca ser una guía de buenas prácticas generales para estructurar un repositorio de datos. Si requieres consultar una guía más detallada, te recomendamos consultar alguna guía como [The Turing Way](https://the-turing-way.netlify.app/welcome.html), que ahonda en buenas prácticas para la ciencia de datos.
+
+## I. Archivos que recomendamos compatir en tu repositorio
 
 ### Datos
-Principalmente, los datos son el motor de tu proyecto, por lo que es crucial incluirlos en tu repositorio. El formato en que compartes los datos puede ser cualquiera. Sin embargo, para contribuir a la accesibilidad, te recomendamos utilizar formas de almacenamiento de datos que permitan la interoperabilidad, es decir, que puedan ser leídos por diferentes programas o lenguajes de programación y no requieran de un software específico. Esto se puede lograr a través del uso de formatos de datos abiertos.
+Los datos son el motor de tu proyecto, así que es esencial que los incluyas en tu repositorio. Aunque puedes compartir los datos en cualquier formato, recomendamos utilizar formatos que promuevan la interoperabilidad. Esto significa que los datos pueden ser leídos por diferentes programas o lenguajes de programación y no necesitan un software específico. Esto se puede lograr mediante el uso de formatos de datos abiertos.
 
  - Algunos ejemplos son: *Comma Separated Values* (.cvs), *Archivos de texto plano* (.txt), *JavaScript Object Notation* (.json), etc.
 
@@ -43,23 +50,32 @@ Si tu proyecto no incluye estos archivos porque la forma en que obtienes los dat
 
 ### Metadatos
 
-Los metadatos son datos que describen a tus datos. En el caso de los datos de investigación, los metadatos describen el contenido, la calidad, el estado, la condición, el origen, la disponibilidad y otras características de los datos. Los metadatos son importantes porque permiten a las personas entender y evaluar los datos, así como encontrarlos y reutilizarlos. 
+Los metadatos son datos que describen tus datos. Éstos describen el contenido, la calidad, el estado, la condición, el origen, la disponibilidad y otras características de los datos, de manera que son importantes porque permiten a las personas usuarias entender y evaluar los datos, así como encontrarlos y reutilizarlos. 
 
-También puedes optar por incluir un **"diccionario de las variables"** para que las personas usuarias puedan entender el significado de cada una de las variables que utilizaste en tu proyecto.
+También puedes optar por incluir un **"diccionario de las variables"** para que las personas usuarias puedan entender el significado de cada una de las variables que utilizaste en tu proyecto, por ejemplo:
+
+| Variable | Descripción | Tipo de dato |
+| -------- | ----------- | ------------ |
+| `id` | Identificador único de cada observación | Numérico |
+| `nombre` | Nombre de la persona | Texto |
+| `edad` | Edad de la persona | Numérico |
+| `sexo` | Sexo de la persona | Categórico |
+| `fecha_nacimiento` | Fecha de nacimiento de la persona | Fecha |
+
 
 ### Código y procesamientos
 
-Los archivos que contienen los procesamientos de datos también son importantes para tu repositorio, ya que constituyen la esencia de tu proyecto.
+Los archivos que contienen el procesamiento de tus datos son igualmente importantes para tu repositorio, ya que forman la base de tu proyecto.
 
-En ocasiones, los procesamientos de datos pueden ser difíciles de interpretar, especialmente para aquellas personas no familiarizadas con el lenguaje de programación que utilizaste. Por lo tanto, es importante que incluyas comentarios en tu código que expliquen qué es lo que estás haciendo. No es necesario ahondar demasiado en cada paso, pero una buena práctica consiste en nombrar las variables de manera que sean descriptivas y fáciles de entender, no usar ambigüedades y evitar el uso de abreviaturas que solo tú entiendas.
+En ocasiones, los procesamientos de datos pueden ser difíciles de interpretar, especialmente para aquellas personas no familiarizadas con el lenguaje de programación que utilizaste. Por ello, puedes considerar la posibilidad de añadir comentarios en tu código que expliquen lo que estás haciendo. No es necesario entrar en detalles minuciosos para cada paso, pero nombrar las variables de manera descriptiva y fácil de entender, evita ambigüedades y puede simplificar la tarea de "leer" tu código.
 
-En caso de no incluir comentarios directamente en tu código, te recomendamos que incluyas un archivo con una breve explicación de lo que hace tu código en el archivo `README.md` de tu repositorio. De este modo, tanto expertos como no expertos podrán entender el propósito y la funcionalidad de tu código.
+Si optas por no incluir comentarios directamente en tu código, te sugerimos que incluyas un archivo con una breve explicación de lo que hace tu código en el archivo `README.md` de tu repositorio. De este modo, tanto expertos como no expertos podrán entender el propósito y la funcionalidad de tu código.
 
-## II. ¿Cómo organizo mis archivos?
+## II. La organización de tus archivos
 
 En esta seccion la clave es mantener una estructura de directorios clara y sobretodo aquí toma mucha importancia la coherencia y el orden con el que acomodememos nuestros archivos.
 
-Inicialmente, las siguientes recomendaciones son parte de un sistema de nomenclatura para facilitar la búsqueda, acceso y comprensión de los archivos de tu proyecto:
+Primero, considera las siguientes recomendaciones para facilitar la búsqueda, el acceso y la comprensión de los archivos de tu proyecto:
 
 * Mantener los nombres de los archivos y carpetas cortos, pero descriptivos.
 * Utilizar guiones bajos (_) o guiones (-) en lugar de espacios para separar las palabras en los nombres de los archivos.
@@ -67,25 +83,25 @@ Inicialmente, las siguientes recomendaciones son parte de un sistema de nomencla
 * Usar fechas en los nombres de los archivos para indicar cuándo se crearon o modificaron.
 * Incluir versiones en los nombres de los archivos -si es necesario- para indicar diferentes versiones de un mismo archivo.
 
-Posteriormente, te compartimos una estructura de directorios que puedes utilizar para organizar tus archivos. Recuerda que esta estructura es solo una recomendación y puedes adaptarla a tus necesidades y al tipo de paradigma de programación que utilizas, por ejemplo, programación orientada a objetos, programación funcional, programación modular, etc.
+A continuación, te sugerimos una estructura de directorios que puedes usar como punto de partida para organizar tus archivos. No olvides que puedes adaptarla a tus necesidades y de acuerdo con el paradigma de programación que utilices, por ejemplo, programación orientada a objetos, programación funcional, programación modular, etc.
 
-Como mínimo te recomendamos incluir las siguientes carpetas:
+a) Al menos, te recomendamos incluir las siguientes carpetas:
 
-- **datos**: En esta carpeta puedes incluir los datos que utilizaste en tu proyecto. Te recomendamos que incluyas subcarpetas para los datos crudos (como vienen de origen), otra para los datos limpios (si realizaste algunos procesos para la limpieza y estructuración de tus datos) y otra para los datos auxiliares (estos son datos que te ayudan por ejemplo algunos diccionarios de variables, diccionarios de claves geográficas, etc.).
+- **datos**: En esta carpeta puedes incluir los datos que utilizaste en tu proyecto. Te recomendamos que incluyas subcarpetas para los datos crudos (como vienen de origen), otra para los datos limpios (si realizaste algunos procesos para la limpieza y estructuración de tus datos) y otra para los datos auxiliares (estos son datos que te ayudan en algún procesamiento, por ejemplo: algunos diccionarios de variables, diccionarios de claves geográficas, etc.).
 
 - **codigo**: En esta carpeta puedes incluir el código que utilizaste para procesar tus datos, ya sean scripts, notebooks, etc.
 
-- **salidas-procesamientos**: En esta carpeta puedes incluir los resultados de tus procesamientos de datos. Te recomendamos que incluyas subcarpetas si tienes diferentes salidas de acuerdo con tus procesamientos. 
+- **salidas-procesamientos**: En esta carpeta puedes incluir los resultados de tus procesamientos de datos. Te sugerimos que incluyas subcarpetas si generas diferentes tipos de salidas.
 
-Como mínimo te recomendamos incluir los siguientes archivos:
+b) Al menos, te recomendamos incluir los siguientes archivos:
 
-- **README.md**: Este archivo es muy importante porque aparece en la página principal de tu repositorio y es el primer acercamiento que tienen las personas usuarias con el contenido de tu proyecto. En este archivo puedes incluir una breve descripción de tu proyecto, los objetivos, los datos que utilizaste, el código que utilizaste, los resultados de tus procesamientos, etc. Adicionalmente dejar explicita la manera en la cual pueden ponerse en contacto con el equipo de trabajo para sumar al proyecto.
+- **README.md**: Este archivo es muy importante porque aparece en la página principal de tu repositorio y es el primer acercamiento que tienen las personas usuarias con el contenido de tu proyecto. Se trata de una descripción general de tu proyecto, más adelante te compartimos algunos puntos que puedes incluir en este archivo.
 
 - **LICENSE**: Este archivo es importante porque permite que las personas usuarias sepan cómo pueden utilizar tu proyecto. Existen diferentes tipos de licencias, por lo que te recomendamos que elijas la que mejor se adapte a tus necesidades. 
 
 - **Archivo de requerimientos para instalar dependencias**: Este archivo es importante porque permite que las personas usuarias sepan qué bibliotecas o dependencias necesitan para ejecutar tu proyecto.
 
-- **.gitignore**: Este archivo es importante porque permite generar un filtro para no compartir archivos que no son necesarios para el proyecto. Por ejemplo, si utilizas Jupyter Notebook, puedes incluir en este archivo la extensión .ipynb_checkpoints/ para que no se compartan los archivos de checkpoints que genera Jupyter Notebook.
+- **.gitignore**: Este archivo es importante porque permite generar un filtro para no compartir archivos que no son necesarios para el proyecto. Por ejemplo, si utilizas Jupyter Notebook, puedes incluir en este archivo la extensión .ipynb_checkpoints/ para que no se compartan los archivos de checkpoints que genera Jupyter Notebook, ya que estos no son relevantes para el funcionamiento de tu proyecto.
 
 - **Archivo con código de tu proyecto principal**: Este archivo es importante porque es el código principal que ejecuta tu proyecto, puedes ponerlo en la carpeta raíz o en la carpeta de código.
 
@@ -115,15 +131,13 @@ Carpeta raíz
 
 ```
 
-## III. ¿Qué necesita mi repositorio para funcionar?
+## III. Lo que necesita mi repositorio para ser funcional y reproducible
 
-**a )** Es importante recordar que para que un proyecto pueda ser ejecutado, es necesario que el repositorio explicite la serie de bibliotecas o dependecias que se utilizaron en el proyecto. 
+**a )** Para que un proyecto pueda ejecutarse correctamente, es esencial especificar las bibliotecas o dependencias utilizadas. Puedes optar por cualquiera de las siguientes opciones, o bien, nuetra recomendación sería llevar a cabo ambas:
 
-Te compartimos estas opciones y puedes utilizar la que más se adapte a tus necesidades, o bien, nuetra recomendación sería llevar a cabo ambas:
+- En tu archivo `README.md`, puedes incluir una lista de las principales dependencias y sus respectivas versiones en una sección que puedes llamar `Dependencias` o `Requerimientos`. 
 
-- Crear un listado de las dependencias y el número de la versión que se utilizó en el proyecto. Esta información puede ser parte de tu documento `README.md` en alguna sección que se llame `Dependencias` o `Requerimientos`. 
-
-- Crear un archivo que contenga un listado de la información de las dependencias y versiones utilizadas en el proyecto; este archivo puede ser un `requirements.txt` para el caso de proyectos en Python, o un `sessionInfo.txt` para el caso de proyectos en R. 
+- Genera un archivo que contenga el listado de dependencias y sus versiones correspondientes; este archivo puede ser un `requirements.txt` para el caso de proyectos en Python, o un `sessionInfo.txt` para el caso de proyectos en R. 
 
 ```
 # Python (requirements.txt)
@@ -142,22 +156,36 @@ Running under: macOS Big Sur 10.16
 Matrix products: default
 BLAS:   /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRblas.dylib
 LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=en_US.UTF-8       
+ [4] LC_COLLATE=en_US.UTF-8     LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
 ```
 
 
-**b)** También es necesario que pongas de manifiesto el lenguaje de programación y la versión que utilizaste para el proyecto; algunos ejemplos son:
+**b)** Es también importante explicitar el lenguaje de programación y la versión utilizados en tu proyecto. Algunos ejemplos son:
 
 - [Python 3.11.0](https://www.python.org/downloads/release/python-3110/)
 - [R 4.0.3](https://cran.r-project.org/bin/windows/base/old/4.0.3/)
 - [Julia 1.5.3](https://julialang.org/downloads/oldreleases/#v153_family)
 - [C++ 11](https://isocpp.org/std/the-standard)
 
-También es válido omitir lo anterior si tu proyecto está albergado en una plataforma que permite la ejecución de código sin necesidad de generar un ambiente local, como por ejemplo [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb#recent=true), [RStudio Cloud](https://rstudio.cloud/) o [Binder](https://mybinder.org/); Si este es tu caso, te recomendamos que explicites, por lo menos, las principales dependencias en el archivo `README.md` de tu repositorio ya que independientemente que no cuentes con un archivo de requemientos como tal, la persona usuaria necesita saber las dependencias necesarias para ejecutar el proyecto, incluso en Binder, es necesario un archivo "requirements.txt".
+También es válido omitir lo anterior si tu proyecto está albergado en una plataforma que permite la ejecución de código sin necesidad de generar un ambiente local, como por ejemplo [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb#recent=true), [RStudio Cloud](https://rstudio.cloud/) o [Binder](https://mybinder.org/); Si este es tu caso, te recomendamos que explicites, por lo menos, las principales dependencias en el archivo `README.md` de tu repositorio ya que independientemente que no cuentes con un archivo de requemientos como tal, la persona usuaria necesita saber las **dependencias necesarias** para ejecutar el proyecto, incluso en Binder, es necesario un archivo "requirements.txt".
 
+**c)** Una documentación adecuada es fundamental para que tu proyecto sea funcional y reproducible.  En esta parte vamos a retomar la importancia del archivo `README.md` de tu repositorio para recomendarte algunos puntos importantes en los que hay que tener claridad:
+
+En este archivo puedes incluir una breve descripción de tu proyecto, los objetivos, los datos que utilizaste, el código que utilizaste, los resultados de tus procesamientos, etc. Aquí hay algunas ideas sobre algunas secciones que puedes incluir en tu archivo `README.md`:
+
+| Sección | Descripción |
+| --- | --- |
+|Explica el propósito de tu proyecto. | ¿Qué problemas estás tratando de resolver?|
+|Describe la estructura de tu proyecto. |¿Qué archivos y directorios contiene tu repositorio?| 
+|  |¿Qué función cumple cada uno de ellos?|
+|Explica cómo ejecutar tu proyecto.| ¿Qué comandos se deben ejecutar? ¿En qué orden?|
 
 ## IV. Licencias
 
-Las licencias más comúnmente utilizadas en proyectos de ciencia abierta son licencia MIT, licencia GNU General Public, licencia Apache, licencia Creative Commons y la licencia BSD. Puedes consultar más información sobre licencias en el siguiente [enlace](https://choosealicense.com/).
+Las licencias más comúnmente utilizadas en proyectos de ciencia abierta son licencia MIT, licencia GNU General Public, licencia Apache, licencia Creative Commons, la licencia BSD, entre otras. Puedes consultar más información sobre licencias en el siguiente [enlace](https://choosealicense.com/).
 
 ## V. Versionamiento
 
@@ -165,15 +193,27 @@ Si tu proyecto tiene diferentes versiones, es importante que lo especifiques en 
 
 ## VI. Guía de contribución
 
-Una guía de contribución se refiere, ya sea a un documento o de manera explícita en el archivo `README.md`, a las instrucciones que se deben seguir para contribuir al proyecto. Esto podría incluir detalles sobre qué tipos de contribuciones son bienvenidas (por ejemplo, mejoras al código, corrección de errores, adición de nuevas funcionalidades), cómo deben ser presentadas (por ejemplo, a través de pull requests), y cualquier lineamiento que deban seguir los contribuyentes.
+Una guía para contribuciones incluye las instrucciones que deben seguirse para colaborar en tu proyecto. Esta información puede ser presentada en un documento específico o directamente en una sección del archivo`README.md`. Esto podría incluir detalles sobre qué tipos de contribuciones son bienvenidas (por ejemplo, mejoras al código, corrección de errores, adición de nuevas funcionalidades), cómo deben ser presentadas (por ejemplo, a través de pull requests), y cualquier lineamiento que deban seguir los contribuyentes.
 
+## VII. Recomendaciones adicionales
 
-## VII. Otras recomendaciones
+* Si estás trabajando con archivos que contienen datos personales o información sensible que no deseas compartir, pero son necesarios para algún proceso de tus datos, te recomendamos emplear un archivo `.gitignore`. Esto evitará que estos archivos se suban a tu repositorio. Informa a los usuarios sobre el motivo por el cual estos archivos no están disponibles y, si fuera necesario, cómo pueden solicitar acceso a los mismos.
 
-a) Es importante considerar que si estás trabajando con archivos que contienen datos personales o información sensible, te recomendamos que utilices un archivo `.gitignore` para que estos archivos no sean subidos a tu repositorio. 
+* Al trabajar con scripts, es posible que utilices *rutas absolutas* para acceder a los archivos que se encuentran en nuestro equipo. Sin embargo, esto puede generar problemas cuando otras personas intenten ejecutar tu código en su propia máquina.
+Si en tu código utilizas *rutas absolutas*, es importante que las cambies a *rutas relativas*. Esto permitirá que otras personas puedan correr tu código en su propia máquina sin necesidad de cambiar todas las rutas de los archivos.
 
-b) 
+Por ejemplo:
 
+```python
+# Ruta absoluta
+ruta = "C:/Users/usuaria/Desktop/Proyecto/datos/datos_crudos/datos.csv"
+
+# Ruta relativa
+ruta = "datos/datos_crudos/datos.csv"
+```
+
+Espero que estas sugerencias te resulten útiles para organizar tu proyecto.
+Recuerda, la clave de un buen proyecto es mantenerlo organizado, documentado, y accesible. ¡Buena suerte! 
 
 # Referencias
 
