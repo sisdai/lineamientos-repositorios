@@ -80,20 +80,19 @@ Primero, considera las siguientes recomendaciones para facilitar la búsqueda, e
 * Mantener los nombres de los archivos y carpetas cortos, pero descriptivos.
 * Utilizar guiones bajos (_) o guiones (-) en lugar de espacios para separar las palabras en los nombres de los archivos.
 * Evitar caracteres especiales o acentos en los nombres de los archivos.
-* Usar fechas en los nombres de los archivos para indicar cuándo se crearon o modificaron.
-* Incluir versiones en los nombres de los archivos -si es necesario- para indicar diferentes versiones de un mismo archivo.
+* Usar fechas en los nombres de los archivos para indicar cuándo se crearon o modificaron. Utiliza algún formato convencional como `YYYY-MM-DD` o `YYYYMMDD`.
 
 A continuación, te sugerimos una estructura de directorios que puedes usar como punto de partida para organizar tus archivos. No olvides que puedes adaptarla a tus necesidades y de acuerdo con el paradigma de programación que utilices, por ejemplo, programación orientada a objetos, programación funcional, programación modular, etc.
 
-a) Al menos, te recomendamos incluir las siguientes carpetas:
+a) Las carpetas mínimas que te recomendamos incluir son:
 
-- **datos**: En esta carpeta puedes incluir los datos que utilizaste en tu proyecto. Te recomendamos que incluyas subcarpetas para los datos crudos (como vienen de origen), otra para los datos limpios (si realizaste algunos procesos para la limpieza y estructuración de tus datos) y otra para los datos auxiliares (estos son datos que te ayudan en algún procesamiento, por ejemplo: algunos diccionarios de variables, diccionarios de claves geográficas, etc.).
+- **/datos**: En esta carpeta puedes incluir los datos que utilizaste en tu proyecto. Te recomendamos que incluyas subcarpetas para los datos crudos (como vienen de origen), otra para los datos limpios (si realizaste algunos procesos para la limpieza y estructuración de tus datos) y otra para los datos auxiliares (estos son datos que te ayudan en algún procesamiento, por ejemplo: algunos diccionarios de variables, diccionarios de claves geográficas, etc.).
 
-- **codigo**: En esta carpeta puedes incluir el código que utilizaste para procesar tus datos, ya sean scripts, notebooks, etc.
+- **/codigo**: En esta carpeta puedes incluir el código que utilizaste para procesar tus datos, ya sean scripts, notebooks, etc.
 
-- **salidas-procesamientos**: En esta carpeta puedes incluir los resultados de tus procesamientos de datos. Te sugerimos que incluyas subcarpetas si generas diferentes tipos de salidas.
+- **/salidas-procesamientos**: En esta carpeta puedes incluir los resultados de tus procesamientos de datos. Te sugerimos que incluyas subcarpetas si generas diferentes tipos de salidas.
 
-b) Al menos, te recomendamos incluir los siguientes archivos:
+b) Los arcchivos mínimos que te recomendamos incluir son:
 
 - **README.md**: Este archivo es muy importante porque aparece en la página principal de tu repositorio y es el primer acercamiento que tienen las personas usuarias con el contenido de tu proyecto. Se trata de una descripción general de tu proyecto, más adelante te compartimos algunos puntos que puedes incluir en este archivo.
 
@@ -163,7 +162,7 @@ locale:
 ```
 
 
-**b)** Es también importante explicitar el lenguaje de programación y la versión utilizados en tu proyecto. Algunos ejemplos son:
+**b)** Es también importante explicitar el lenguaje de programación y la versión utilizados en tu proyecto; puedes hacerlo en el archivo `README.md`. Algunos ejemplos son:
 
 - [Python 3.11.0](https://www.python.org/downloads/release/python-3110/)
 - [R 4.0.3](https://cran.r-project.org/bin/windows/base/old/4.0.3/)
@@ -189,7 +188,7 @@ Las licencias más comúnmente utilizadas en proyectos de ciencia abierta son li
 
 ## V. Versionamiento
 
-Si tu proyecto tiene diferentes versiones, es importante que lo especifiques en el archivo `README.md` de tu repositorio. Esto proporciona más detalles sobre cómo los usuarios deben manejar las versiones de su proyecto. 
+Si tu proyecto tiene diferentes versiones, es importante que lo especifiques en el archivo `README.md` de tu repositorio. Esto proporciona más detalles sobre cómo los usuarios deben manejar las versiones de su proyecto. Puedes ahondar más en el tema en el siguiente [enlace](https://semver.org/lang/es/).
 
 ## VI. Guía de contribución
 
