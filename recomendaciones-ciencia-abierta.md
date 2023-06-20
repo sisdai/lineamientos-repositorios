@@ -6,7 +6,7 @@ La *ciencia abierta* se refiere a la práctica de la ciencia de manera en que la
 
 Los proyectos de ciencia abierta generalmente se desarrollan bajo términos y licencias que permiten la reutilización, redistribución y reproducción tanto de la recolección, limpieza y análisis de datos, como de las metodologías y resultados obtenidos en los procesos de investigación.
 
-Principalmente la ciencia abierta se basa en los principios de *inclusión, impacialidad, equidad, y distribución* (Bezjak *et al.*, 2019). 
+Principalmente la ciencia abierta se basa en los principios de *inclusión, imparcialidad, equidad, y distribución* (Bezjak *et al.*, 2019). 
 
 Aunado a lo anterior, Vicente-Sáez y Martínez-Fuentes (2018) comprenden la ciencia abierta como:
 
@@ -67,7 +67,7 @@ También puedes optar por incluir un **"diccionario de las variables"** para que
 
 Los archivos que contienen el procesamiento de tus datos son igualmente importantes para tu repositorio, ya que forman la base de tu proyecto.
 
-En ocasiones, los procesamientos de datos pueden ser difíciles de interpretar, especialmente para aquellas personas no familiarizadas con el lenguaje de programación que utilizaste. Por ello, puedes considerar la posibilidad de añadir comentarios en tu código que expliquen lo que estás haciendo. No es necesario entrar en detalles minuciosos para cada paso, pero nombrar las variables de manera descriptiva y fácil de entender, evita ambigüedades y puede simplificar la tarea de "leer" tu código.
+En ocasiones, los procesamientos de datos pueden ser difíciles de interpretar, especialmente para aquellas personas no familiarizadas con el lenguaje de programación que utilizaste. Por ello, puedes considerar la posibilidad de añadir comentarios en tu código que expliquen lo que estás haciendo. No es necesario entrar en detalles minuciosos para cada paso, pero nombrar las variables de manera descriptiva y fácil de entender, evita ambigüedades y simplifica la tarea de "leer" tu código.
 
 Si optas por no incluir comentarios directamente en tu código, te sugerimos que incluyas un archivo con una breve explicación de lo que hace tu código en el archivo `README.md` de tu repositorio. De este modo, tanto expertos como no expertos podrán entender el propósito y la funcionalidad de tu código.
 
@@ -78,7 +78,7 @@ En esta seccion la clave es mantener una estructura de directorios clara y sobre
 Primero, considera las siguientes recomendaciones para facilitar la búsqueda, el acceso y la comprensión de los archivos de tu proyecto:
 
 * Mantener los nombres de los archivos y carpetas cortos, pero descriptivos.
-* Utilizar guiones bajos (_) o guiones (-) en lugar de espacios para separar las palabras en los nombres de los archivos.
+* Utilizar guiones bajos (_) o guiones medios (-) en lugar de espacios para separar las palabras en los nombres de los archivos.
 * Evitar caracteres especiales o acentos en los nombres de los archivos.
 * Usar fechas en los nombres de los archivos para indicar cuándo se crearon o modificaron. Utiliza algún formato convencional como `YYYY-MM-DD` o `YYYYMMDD`.
 
@@ -101,6 +101,8 @@ b) Los arcchivos mínimos que te recomendamos incluir son:
 - **Archivo de requerimientos para instalar dependencias**: Este archivo es importante porque permite que las personas usuarias sepan qué bibliotecas o dependencias necesitan para ejecutar tu proyecto.
 
 - **.gitignore**: Este archivo es importante porque permite generar un filtro para no compartir archivos que no son necesarios para el proyecto. Por ejemplo, si utilizas Jupyter Notebook, puedes incluir en este archivo la extensión .ipynb_checkpoints/ para que no se compartan los archivos de checkpoints que genera Jupyter Notebook, ya que estos no son relevantes para el funcionamiento de tu proyecto.
+
+- Otra situación que puede presentarse es al trabajar con archivos que contienen datos personales o información sensible que no deseas compartir, pero son necesarios para algún proceso de tus datos. Si este es el caso, te recomendamos emplear el archivo `.gitignore`. Informa a los usuarios sobre el motivo por el cual estos archivos no están disponibles y, si fuera necesario, cómo pueden solicitar acceso a los mismos.
 
 - **Archivo con código de tu proyecto principal**: Este archivo es importante porque es el código principal que ejecuta tu proyecto, puedes ponerlo en la carpeta raíz o en la carpeta de código.
 
@@ -196,8 +198,6 @@ Una guía para contribuciones incluye las instrucciones que deben seguirse para 
 
 ## VII. Recomendaciones adicionales
 
-* Si estás trabajando con archivos que contienen datos personales o información sensible que no deseas compartir, pero son necesarios para algún proceso de tus datos, te recomendamos emplear un archivo `.gitignore`. Esto evitará que estos archivos se suban a tu repositorio. Informa a los usuarios sobre el motivo por el cual estos archivos no están disponibles y, si fuera necesario, cómo pueden solicitar acceso a los mismos.
-
 * Al trabajar con scripts, es posible que utilices *rutas absolutas* para acceder a los archivos que se encuentran en nuestro equipo. Sin embargo, esto puede generar problemas cuando otras personas intenten ejecutar tu código en su propia máquina.
 Si en tu código utilizas *rutas absolutas*, es importante que las cambies a *rutas relativas*. Esto permitirá que otras personas puedan correr tu código en su propia máquina sin necesidad de cambiar todas las rutas de los archivos.
 
@@ -210,6 +210,8 @@ ruta = "C:/Users/usuaria/Desktop/Proyecto/datos/datos_crudos/datos.csv"
 # Ruta relativa
 ruta = "datos/datos_crudos/datos.csv"
 ```
+
+En este ejemplo, puedes notar que la *ruta absoluta* hace referencia explícita al nombre de la persona usuaria en específico y la ubicación precisa de la carpeta en el sistema operativo (por ejemplo, "C:/"). Por el contrario, la *ruta relativa* solo menciona las carpetas que forman parte del proyecto, sin indicar el nombre de usuario ni las carpetas adicionales específicas. Así, la utilización de rutas relativas facilita la portabilidad del código entre diferentes sistemas. 
 
 Espero que estas sugerencias te resulten útiles para organizar tu proyecto.
 Recuerda, la clave de un buen proyecto es mantenerlo organizado, documentado, y accesible. ¡Buena suerte! 🍀
