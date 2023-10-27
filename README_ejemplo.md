@@ -7,18 +7,17 @@ líneas de texto.
 ## Introducción / Acerca de este proyecto
 Acá puedes poner el objetivo de proyecto o del repositorio. La idea de esta sección es introducir de manera amable a la 
 persona usuaria, casi como si le explicaras a tu abuelita para que estás construyendo esto. La redacción de esta parte
-debe de ser entre 5 y 10 líneas de texto. A continuación el texto que debes agregar*:
+debe de ser entre 5 y 10 líneas de texto. 
+
+La siguiente parte sólo la colocarás en caso de que el proyecto se haga público aún en desarrollo o se socialice de manera "no oficial":
 
 > **_Limitación de responsabilidad_**
 >
-> El presente es un proyecto en construcción, por tanto ni el equipo del Sisdai
-> ni el de Salsa son responsables del uso y contenido del presente recurso,
+> El presente es un proyecto en construcción, por tanto el equipo del Sisdai
+> no es responsable del uso y contenido del presente recurso,
 > toda vez que se trata de una versión en su modalidad prueba, y no de una
-> versión pública, por lo que una vez que sea lanzada la versión final,
-> se invita a la persona usuaria a consultarla y validar sus requisitos.
-
-*Esta parte sólo la colocarás en caso de que el proyecto se libere al público aún en desarrollo o se socialice de 
-manera "no oficial".
+> versión liberada al público, por lo que una vez que sea lanzada la versión
+> final, se invita a la persona usuaria a consultarla y validar sus requisitos.
 
 ## Requerimientos / Dependencias
 
@@ -38,7 +37,7 @@ cada tecnología. Usa el nombre correcto de cada tecnología (mayúsculas, exten
 Nuevamente, acá en esta sección imagina que le estás enseñando a tu abuelita a instalar tu aplicación, o bien, le 
 estás dando instrucciones de como usarla.
 
-Conjunté ambas opciones _Instalación_ e _Instrucciones_ pues una puede excluir a al contrario. Es cuestión de 
+Conjunté ambas opciones _Instalación_ e _Instrucciones_ pues una puede excluir a la otra o al contrario ¿Es cuestión de 
 que tú decidas como estructurar esta sección. Puedes agregar subsecciones, imágenes, tablas, etc. Todo es con la 
 finalidad de que la persona usuaria entienda el _qué_, el _cómo_ y el _cuando_.
 
@@ -47,29 +46,30 @@ finalidad de que la persona usuaria entienda el _qué_, el _cómo_ y el _cuando_
 La Licencia de software que usamos en Sisdai debe de ser de código abierto. Además del archivo _LICENCE_ que se debe 
 de agregar a la estructura del repositorio, también se debe copiar o simplemente mencionar en esta sección. Por el 
 momento no hay un acuerdo acerca de la licencia específica que usaremos, hay ciertos candidatos como la licencia de 
-_Apache_, las de _Creative Commons_, entre otras. Por lo anterior y apegándonos a 
-[SALSA](https://salsa.crip.conacyt.mx/), lo que se agregará aquí, será el siguiente párrafo:
+_Apache_, las de _Creative Commons_, entre otras. Por lo anterior y apegándonos a la Estrategia Digital Nacional lo que se agregará aquí, será el siguiente párrafo.
 
 **SOFTWARE LIBRE Y ESTÁNDARES ABIERTOS**
 
-Sisdai está alineado a las disposiciones establecidas por la Coordinación de Estrategia Digital Nacional 
-(DOF: 06/09/2021) en donde se estipula que las "políticas y disposiciones tienen como objetivo fortalecer el uso del 
-software libre y los estándares abiertos, fomentar el desarrollo de aplicaciones institucionales con utilidad pública, 
-lograr la autonomía, soberanía e independencia tecnológicas dentro de la APF". En el artículo 63 se explicita que 
-"cuando se trate de desarrollos basados en software libre, se respetarán las condiciones de su licenciamiento 
-original [...]", en este sentido este proyecto está alineado a lo que se define desde
-[SALSA](https://salsa.crip.conacyt.mx/).
+Sisdai y sisdai-css están alineadas a las disposiciones establecidas por
+la Coordinación de Estrategia Digital Nacional (
+DOF:06/09/2021) en donde se estipula que las "políticas y disposiciones tienen
+como objetivo fortalecer el uso del software
+libre y los estándares abiertos, fomentar el desarrollo de aplicaciones
+institucionales con utilidad pública, lograr la
+autonomía, soberanía e independencia tecnológicas dentro de la APF". En el
+artículo 63 se explicita que "cuando se trate
+de desarrollos basados en software libre, se respetarán las condiciones de su
+licenciamiento original [...]".
 
 ## Contribuir
 
 Esta sección es para indicar a la persona usuaria como colaborar con nosotras en este proyecto. Esto es importante, 
 pues estamos desarrollando software de código abierto. El párrafo que colocarás aquí será el siguiente:
 
-Para contribuir al proyecto, se pide que se haga por medio de los lineamientos de contribución de SALSA que se
-pueden consultar [aquí](https://salsa.crip.conacyt.mx/guidelines/contribute/).
+Para contribuir al proyecto, se pide que se haga tomando en cuenta la guía de
+contribución
+de [git](https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Contribuyendo-a-un-Proyecto)
 
-*En los lineamientos de contribución se lista la rama _master_ se lista como principal, sin embargo en este proyecto, 
-dicha rama es _main_.
 
 ### Más acerca de las contribuciones
 
@@ -84,11 +84,11 @@ los enlaces por si quieres irle echando un ojito.
 ## Otras consideraciones (muy) importantes
 
 Cualquier otra sección que consideres necesario que vaya en la documentación, por favor ¡agrégala! 
-Por favor no olvides
+No olvides
 
-- Llenar en apartado de _About_.
+- Llenar el apartado de _About_.
 - Usar tags de versionamiento.
-- Tener una rama _main_ y otra rama _develop_ como mínimo.
+- Tener una rama _main_ y otra rama _develop_ como **mínimo**.
 - Estructurar de acuerdo a la tecnología usada.
 - De manera opcional puedes usar [_badges_](https://shields.io/).
 - Agrega un archivo `.gitignore`. En este repositorio puedes encontrar un ejemplo que contiene una plantilla de archivo 
@@ -98,7 +98,7 @@ usado para _Python_.
 incluya socializar los datos. 
 - SÍ puedes versionar datos auxiliares, como claves de estados de la república mexicana, datos de población, etc.
 - NO versiones archivos de sistema (__MACOSX_, _.ipynb_checkpoints_, etc.).
-- En general mantén adecuadamente tu repositorio y tu documentación.
+- En general mantén adecuadamente tu repositorio y tu documentación y recuerda que desarrollar código significa un mantenimiento contínuo tanto del código, como de la documentación.
 
 Si quieres revisar los lineamientos generales de los repositorios, ve al archivo LINEAMIENTOS.md 
 
