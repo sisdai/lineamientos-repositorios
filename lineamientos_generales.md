@@ -103,8 +103,8 @@ listan a continuación.
   manera "no oficial"
 - Requerimientos o dependencias.
 - Instrucciones de instalación y/o uso.
-- Licencia (SALSA).
-- Contribución (SALSA).
+- Licencia.
+- Contribución.
 
 También de manera opcional y en medida de lo posible puedes incluir [badges](https://shields.io/).
 
@@ -128,16 +128,9 @@ público usuario:
 
 ## Contribuir a este repositorio
 
-Para contribuir a este proyecto de buenas prácticas, hazlo usando los lineamientos de SALSA, que puedes consultar
-[aquí](https://salsa.crip.conacyt.mx/guidelines/contribute/)*. De la misma manera, puedes consultar las siguientes 
-fuentes de información para conocer más acerca de como contribuir a los proyectos.
-
-- [Contribuir a proyectos](https://docs.github.com/es/get-started/quickstart/contributing-to-projects)
-- [Creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
-
-*En los lineamientos de contribución se lista la rama _master_ se lista como principal, sin embargo en este proyecto,
-dicha rama es _main_.
-
+Para contribuir a este proyecto de buenas prácticas, por favor hazlo tomando en cuenta la guía de
+contribución
+de [git](https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Contribuyendo-a-un-Proyecto)
 
 
 
