@@ -50,7 +50,7 @@ _Apache_, las de _Creative Commons_, entre otras. Por lo anterior y apegándonos
 
 **SOFTWARE LIBRE Y ESTÁNDARES ABIERTOS**
 
-Sisdai y sisdai-css están alineadas a las disposiciones establecidas por
+Este proyecto se encuentra alineado al Sisdai que a su vez, parte de las disposiciones establecidas por
 la Coordinación de Estrategia Digital Nacional (
 DOF:06/09/2021) en donde se estipula que las "políticas y disposiciones tienen
 como objetivo fortalecer el uso del software
