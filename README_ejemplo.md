@@ -119,6 +119,8 @@ incluya socializar los datos.
 
 Si quieres revisar los lineamientos generales de los repositorios, ve al archivo LINEAMIENTOS.md 
 
+Un ejemplo de documentación ya aprobada y de acuerdo a estos lineamientos es: https://scm.crip.conacyt.mx/educacion/index
+
 
 
 
