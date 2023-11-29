@@ -41,6 +41,23 @@ Conjunté ambas opciones _Instalación_ e _Instrucciones_ pues una puede excluir
 que tú decidas como estructurar esta sección. Puedes agregar subsecciones, imágenes, tablas, etc. Todo es con la 
 finalidad de que la persona usuaria entienda el _qué_, el _cómo_ y el _cuando_.
 
+## Configuración
+
+Esta puede ser una subsección de Instalación o una sección nueva. La idea aquí es poner todas los pasos necesarios 
+para garantizar que funcione el código.
+
+## Ejemplos de uso
+
+Explicarle a las personas usuarias si es posible reutilizar este código y para que fines. Muchos de los repositorios
+de análisis de datos, por ejemplo sirven para una sola cosa, pero se han hecho funciones dentro de ese código que 
+si pueden ser reutilizables para otros procesamientos, por lo tanto se pueden incluir todas esas funciones aquí.
+
+## Producto final
+
+Agregar links o capturas de pantalla de los desarrollos, por ejemplo, links a los capítulos de los ENI, o una 
+captura de pantalla del backend. También si se procesaron datos, una tabla que explique los datasets de salida, 
+como en variantes.
+
 ## Licencia
 
 La Licencia de software que usamos en Sisdai debe de ser de código abierto. Además del archivo _LICENCE_ que se debe 
